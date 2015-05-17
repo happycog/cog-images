@@ -1,6 +1,6 @@
 {
-  "name": "Media Block",
-  "description": "A media block of SCS",
+  "name": "Image Block",
+  "description": "Image block",
   "version": "1.0.0",
   "main": "dist/images.scss",
   "license": "MIT",
