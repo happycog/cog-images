@@ -1,0 +1,76 @@
+img {
+  display: block;
+  max-width: 100%; }
+
+.img {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 0;
+  padding-top: 100%; }
+  .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+.img--ratio-1-1 {
+  padding-top: 100%; }
+.img--ratio-2-1 {
+  padding-top: 50%; }
+.img--ratio-1-2 {
+  padding-top: 200%; }
+.img--ratio-3-2 {
+  padding-top: 66.66667%; }
+.img--ratio-2-3 {
+  padding-top: 150%; }
+.img--ratio-4-3 {
+  padding-top: 75%; }
+.img--ratio-3-4 {
+  padding-top: 133.33333%; }
+.img--ratio-5-4 {
+  padding-top: 80%; }
+.img--ratio-4-5 {
+  padding-top: 125%; }
+.img--ratio-7-6 {
+  padding-top: 85.71429%; }
+.img--ratio-16-9 {
+  padding-top: 56.25%; }
+.img--ratio-golden {
+  padding-top: 61.8047%; }
+
+[data-img-ratio="1:1"] {
+  padding-top: 100%; }
+
+[data-img-ratio="2:1"] {
+  padding-top: 50%; }
+
+[data-img-ratio="1:2"] {
+  padding-top: 200%; }
+
+[data-img-ratio="3:2"] {
+  padding-top: 66.66667%; }
+
+[data-img-ratio="2:3"] {
+  padding-top: 150%; }
+
+[data-img-ratio="4:3"] {
+  padding-top: 75%; }
+
+[data-img-ratio="3:4"] {
+  padding-top: 133.33333%; }
+
+[data-img-ratio="5:4"] {
+  padding-top: 80%; }
+
+[data-img-ratio="4:5"] {
+  padding-top: 125%; }
+
+[data-img-ratio="7:6"] {
+  padding-top: 85.71429%; }
+
+[data-img-ratio="16:9"] {
+  padding-top: 56.25%; }
+
+[data-img-ratio="golden"] {
+  padding-top: 61.8047%; }

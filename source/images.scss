@@ -1,0 +1,60 @@
+// Ratio function calculates ratios
+
+@function ratio($width, $height) {
+	@return ($height/$width) * 100%;
+}
+
+// Responsive images
+img {
+	display: block;
+	max-width: 100%;
+}
+
+// Intrinsic ratio wrap
+
+.img {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	height: 0;
+	padding-top: ratio(1,1);
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+
+// Ratio extensions
+
+.img {
+	&--ratio-1-1 { padding-top: ratio(1,1); }
+	&--ratio-2-1 { padding-top: ratio(2,1); }
+	&--ratio-1-2 { padding-top: ratio(1,2); }
+	&--ratio-3-2 { padding-top: ratio(3,2); }
+	&--ratio-2-3 { padding-top: ratio(2,3); }
+	&--ratio-4-3 { padding-top: ratio(4,3); }
+	&--ratio-3-4 { padding-top: ratio(3,4); }
+	&--ratio-5-4 { padding-top: ratio(5,4); }
+	&--ratio-4-5 { padding-top: ratio(4,5); }
+	&--ratio-7-6 { padding-top: ratio(7,6); }
+	&--ratio-16-9 { padding-top: ratio(16,9); }
+	&--ratio-golden { padding-top: ratio(1.618,1); }
+}
+
+// Optional, use a data-attribute
+
+[data-img-ratio="1:1"] { padding-top: ratio(1,1); }
+[data-img-ratio="2:1"] { padding-top: ratio(2,1); }
+[data-img-ratio="1:2"] { padding-top: ratio(1,2); }
+[data-img-ratio="3:2"] { padding-top: ratio(3,2); }
+[data-img-ratio="2:3"] { padding-top: ratio(2,3); }
+[data-img-ratio="4:3"] { padding-top: ratio(4,3); }
+[data-img-ratio="3:4"] { padding-top: ratio(3,4); }
+[data-img-ratio="5:4"] { padding-top: ratio(5,4); }
+[data-img-ratio="4:5"] { padding-top: ratio(4,5); }
+[data-img-ratio="7:6"] { padding-top: ratio(7,6); }
+[data-img-ratio="16:9"] { padding-top: ratio(16,9); }
+[data-img-ratio="golden"] { padding-top: ratio(1.618,1); }
