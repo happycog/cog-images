@@ -1,5 +1,5 @@
 {
-  "name": "Image Block",
+  "name": "cog-images",
   "description": "Image block",
   "version": "1.0.0",
   "main": "dist/images.scss",
