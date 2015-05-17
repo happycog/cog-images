@@ -1,6 +1,6 @@
 {
-  "name": "cog-images",
-  "description": "Image block",
+  "name": "Images",
+  "description": "Responsive images and intrinsic ratios.",
   "version": "1.0.0",
   "main": "dist/images.scss",
   "license": "MIT",
